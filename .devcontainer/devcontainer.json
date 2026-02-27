@@ -14,10 +14,8 @@
     }
   },
   "features": {
-    // "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     "./podman-outside-of-podman": {}
   },
   "containerUser": "vscode",
   "updateContentCommand": "npm install -g @devcontainers/cli"
-  // "runArgs": ["--security-opt", "label=disable", "--userns=keep-id"]
 }
