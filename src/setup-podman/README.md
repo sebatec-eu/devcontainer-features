@@ -16,12 +16,8 @@ Installs podman-remote and podman-docker, and mounts the host's Podman socket in
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 
-## Environment Variables
 
-| Variable | Value |
-|-----|-----|
-| `DOCKER_HOST` | `unix:///tmp/podman-143d1b19-36fb-4790-9a48-eb7a5e5e378e.sock` |
-| `CONTAINER_HOST` | `unix:///tmp/podman-143d1b19-36fb-4790-9a48-eb7a5e5e378e.sock` |
+
 
 ---
 
