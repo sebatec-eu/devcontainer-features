@@ -10,7 +10,7 @@ chmod +x /usr/local/bin/forgejo-runner
 
 cat >/usr/local/bin/forgejo-runner-exec<<EOF
 #!/bin/bash
-exec forgejo-runner exec --container-daemon-socket /tmp/podman-143d1b19-36fb-4790-9a48-eb7a5e5e378e.sock --default-actions-url=https://forge.sebatec.eu --image=ghcr.io/sebatec-eu/stable-forgejo-runner:1 "\$@"
+exec forgejo-runner exec --container-daemon-socket "\${DOCKER_HOST#unix://}" --default-actions-url=https://forge.sebatec.eu --image=ghcr.io/sebatec-eu/stable-forgejo-runner:1 "\$@"
 EOF
 chmod +x /usr/local/bin/forgejo-runner-exec
 

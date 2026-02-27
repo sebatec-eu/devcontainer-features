@@ -10,16 +10,8 @@
       "description": "Version of forgejo runner"
     }
   },
-  "dependsOn": {},
-  "mounts": [
-    {
-      "type": "bind",
-      "source": "${localEnv:XDG_RUNTIME_DIR}/podman/podman.sock",
-      "target": "/tmp/podman-143d1b19-36fb-4790-9a48-eb7a5e5e378e.sock"
-    }
-  ],
-  "containerEnv": {
-    "DOCKER_HOST": "unix:///tmp/podman-143d1b19-36fb-4790-9a48-eb7a5e5e378e.sock"
+  "dependsOn": {
+    "ghcr.io/sebatec-eu/devcontainer-features/setup-podman:1": {}
   },
   "customizations": {
     "vscode": {
