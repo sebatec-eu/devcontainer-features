@@ -1,0 +1,8 @@
+{
+  "setup-forgejo-runner": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-forgejo-runner": {}
+    }
+  }
+}

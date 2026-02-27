@@ -1,0 +1,23 @@
+{
+  "name": "Podman Outside Of Podman",
+  "id": "podman-outside-of-podman",
+  "version": "1.0.0",
+  "description": "Create child containers *inside* a container, independent from the host's podman instance.",
+  "options": {},
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"],
+  "containerEnv": {
+    "CONTAINER_HOST": "unix:///tmp/podman-f4dcfb16-8d0c-49c0-a6cc-abd32f2eb02b.sock"
+  },
+  "mounts": [
+    {
+      "type": "bind",
+      "source": "/tmp",
+      "target": "/tmp"
+    },
+    {
+      "type": "bind",
+      "source": "${localEnv:XDG_RUNTIME_DIR}/podman/podman.sock",
+      "target": "/tmp/podman-f4dcfb16-8d0c-49c0-a6cc-abd32f2eb02b.sock"
+    }
+  ]
+}
