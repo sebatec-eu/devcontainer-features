@@ -5,5 +5,14 @@
       "setup-forgejo-runner": {},
       "ghcr.io/sebatec-eu/devcontainer-features/setup-podman:1": {}
     }
+  },
+  "setup-forgejo-runner-pinned": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-forgejo-runner": {
+        "version": "6.3.1"
+      },
+      "ghcr.io/sebatec-eu/devcontainer-features/setup-podman:1": {}
+    }
   }
 }

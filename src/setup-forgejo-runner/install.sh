@@ -2,7 +2,11 @@
 set -xe
 
 ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')
-RUNNER_VERSION=$(curl -X 'GET' https://data.forgejo.org/api/v1/repos/forgejo/runner/releases/latest | jq .name -r | cut -c 2-)
+if [ "${VERSION}" = "latest" ]; then
+    RUNNER_VERSION=$(curl -X 'GET' https://data.forgejo.org/api/v1/repos/forgejo/runner/releases/latest | jq .name -r | cut -c 2-)
+else
+    RUNNER_VERSION="${VERSION}"
+fi
 FORGEJO_URL="https://code.forgejo.org/forgejo/runner/releases/download/v${RUNNER_VERSION}/forgejo-runner-${RUNNER_VERSION}-linux-${ARCH}"
 
 curl -o /usr/local/bin/forgejo-runner "${FORGEJO_URL}"
