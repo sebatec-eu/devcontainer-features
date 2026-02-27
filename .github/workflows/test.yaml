@@ -16,8 +16,7 @@ jobs:
           - color
           - hello
         baseImage:
-          - debian:latest
-          - ubuntu:latest
+          - ghcr.io/sebatec-eu/base-devcontainer:1
           - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
       - uses: actions/checkout@v4
