@@ -7,7 +7,7 @@ Installs forgejo Runner for testing
 
 ```json
 "features": {
-    "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:1": {}
+    "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:2": {}
 }
 ```
 
