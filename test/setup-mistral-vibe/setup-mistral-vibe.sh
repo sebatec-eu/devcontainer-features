@@ -7,8 +7,8 @@ set -e
 
 source dev-container-features-test-lib
 
-check "mistral-vibe is installed" which mistral-vibe
-check "mistral-vibe is executable" test -x "$(which mistral-vibe)"
+check "mistral-vibe is installed" which vibe
+check "mistral-vibe is executable" test -x "$(which vibe)"
 check ".vibe mount point exists" test -d "/home/vscode/.vibe"
 
 reportResults
