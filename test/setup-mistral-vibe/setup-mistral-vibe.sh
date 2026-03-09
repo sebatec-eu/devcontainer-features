@@ -8,7 +8,8 @@ set -e
 source dev-container-features-test-lib
 
 echo $PATH
-uv tool list --show-paths
+# uv tool list --show-paths
+find / -name vibe 2> /dev/null
 
 check "mistral-vibe is installed" which vibe
 check "mistral-vibe is executable" test -x "$(which vibe)"
