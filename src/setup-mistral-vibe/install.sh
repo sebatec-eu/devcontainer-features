@@ -2,7 +2,7 @@
 set -eux
 
 # Install mistral-vibe as the determined user
-if command -v uv &> /dev/null; then
+if sudo -u vscode bash -c 'command -v uv' &> /dev/null; then
     sudo -u vscode uv tool install mistral-vibe
 else
     sudo -u vscode bash -c 'curl -LsSf https://mistral.ai/vibe/install.sh | bash'
