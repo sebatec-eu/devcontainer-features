@@ -22,6 +22,7 @@ A collection of reusable [dev container Features](https://containers.dev/impleme
 | ----------------------------------------------- | ------------------------------------------------------------------- |
 | [`setup-podman`](#setup-podman)                 | Installs podman-remote and podman-docker, mounts host Podman socket |
 | [`setup-forgejo-runner`](#setup-forgejo-runner) | Installs Forgejo Runner for CI/CD testing                           |
+| [`setup-mistral-vibe`](#setup-mistral-vibe)     | Installs mistral-vibe and mounts .vibe configuration directory      |
 
 > Versions are maintained in each feature's [`devcontainer-feature.json`](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
 
@@ -79,6 +80,27 @@ $ forgejo-runner-exec
 ```
 
 See [setup-forgejo-runner README](src/setup-forgejo-runner/README.md) and the [Forgejo Runner documentation](https://code.forgejo.org/forgejo/runner) for details.
+
+### setup-mistral-vibe
+
+Installs `mistral-vibe` and mounts the host's `.vibe` configuration directory into the container. This allows you to use Mistral Vibe with your existing configuration.
+
+```jsonc
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/sebatec-eu/devcontainer-features/setup-mistral-vibe:1": {},
+  },
+}
+```
+
+After the feature is installed, you can use mistral-vibe inside the container:
+
+```bash
+$ vibe --version
+```
+
+See [setup-mistral-vibe README](src/setup-mistral-vibe/README.md) for details.
 
 ## Repository Structure
 
