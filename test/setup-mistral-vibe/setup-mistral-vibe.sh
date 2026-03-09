@@ -9,6 +9,7 @@ source dev-container-features-test-lib
 
 echo $PATH
 # uv tool list --show-paths
+set -xeu
 find / -name vibe 2> /dev/null
 
 check "mistral-vibe is installed" which vibe
