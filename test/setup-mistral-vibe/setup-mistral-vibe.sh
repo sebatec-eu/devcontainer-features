@@ -7,6 +7,9 @@ set -e
 
 source dev-container-features-test-lib
 
+echo $PATH
+uv tool list --show-paths
+
 check "mistral-vibe is installed" which vibe
 check "mistral-vibe is executable" test -x "$(which vibe)"
 check ".vibe mount point exists" test -d "/home/vscode/.vibe"
