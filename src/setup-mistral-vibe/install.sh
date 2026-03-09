@@ -1,8 +1,12 @@
 #!/bin/bash
 set -eux
 
+# Install mistral-vibe as the determined user
 if command -v uv &> /dev/null; then
-    uv tool install mistral-vibe
+    sudo -u vscode uv tool install mistral-vibe
 else
-    curl -LsSf https://mistral.ai/vibe/install.sh | bash
+    sudo -u vscode bash -c 'curl -LsSf https://mistral.ai/vibe/install.sh | bash'
 fi
+
+# XXX: fix stupid access error
+echo "" > /tmp/.devcontainer-setup
