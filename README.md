@@ -11,7 +11,7 @@ A collection of reusable [dev container Features](https://containers.dev/impleme
 {
   "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
   "features": {
-    "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:1": {},
+    "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:2": {},
   },
 }
 ```
@@ -62,7 +62,7 @@ Installs Forgejo Runner, enabling CI/CD job execution within the dev container. 
 {
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:1": {
+    "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:2": {
       "version": "2.0.0",
     },
   },
