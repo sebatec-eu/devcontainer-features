@@ -1,6 +1,6 @@
 # Setup Beans (setup-beans)
 
-Installs beans CLI tool from GitHub releases.
+Installs beans CLI tool ([GitHub](https://github.com/hmans/beans)) from GitHub releases.
 
 ## Example Usage
 

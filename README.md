@@ -105,7 +105,7 @@ See [setup-mistral-vibe README](src/setup-mistral-vibe/README.md) for details.
 
 ### setup-beans
 
-Installs `beans` CLI tool from GitHub releases.
+Installs `beans` CLI tool ([GitHub](https://github.com/hmans/beans)) from GitHub releases.
 
 **Optional:** Specify a beans version (defaults to `latest`):
 
