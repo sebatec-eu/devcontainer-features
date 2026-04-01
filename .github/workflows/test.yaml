@@ -19,6 +19,8 @@ jobs:
             baseImage: ghcr.io/sebatec-eu/base-devcontainer:1
           - features: setup-mistral-vibe
             baseImage: ghcr.io/sebatec-eu/base-devcontainer:1
+          - features: setup-beans
+            baseImage: ghcr.io/sebatec-eu/base-devcontainer:1
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
@@ -43,6 +45,7 @@ jobs:
           - setup-forgejo-runner
           - setup-podman
           - setup-mistral-vibe
+          - setup-beans
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
