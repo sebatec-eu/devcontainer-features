@@ -23,6 +23,7 @@ A collection of reusable [dev container Features](https://containers.dev/impleme
 | [`setup-podman`](#setup-podman)                 | Installs podman-remote and podman-docker, mounts host Podman socket |
 | [`setup-forgejo-runner`](#setup-forgejo-runner) | Installs Forgejo Runner for CI/CD testing                           |
 | [`setup-mistral-vibe`](#setup-mistral-vibe)     | Installs mistral-vibe and mounts .vibe configuration directory      |
+| [`setup-beans`](#setup-beans)                   | Installs beans CLI tool from GitHub releases                        |
 
 > Versions are maintained in each feature's [`devcontainer-feature.json`](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
 
@@ -101,6 +102,32 @@ $ vibe --version
 ```
 
 See [setup-mistral-vibe README](src/setup-mistral-vibe/README.md) for details.
+
+### setup-beans
+
+Installs `beans` CLI tool from GitHub releases.
+
+**Optional:** Specify a beans version (defaults to `latest`):
+
+```jsonc
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/sebatec-eu/devcontainer-features/setup-beans:1": {
+      "version": "latest",
+    },
+  },
+}
+```
+
+After the feature is installed, you can use beans inside the container:
+
+```bash
+$ beans version
+$ beans list
+```
+
+See [setup-beans README](src/setup-beans/README.md) for details.
 
 ## Repository Structure
 
