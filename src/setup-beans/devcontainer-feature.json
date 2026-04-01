@@ -1,0 +1,14 @@
+{
+  "id": "setup-beans",
+  "version": "1.0.0",
+  "name": "Setup Beans",
+  "description": "Installs beans CLI tool from GitHub releases.",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "Version of beans to install"
+    }
+  },
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"]
+}
