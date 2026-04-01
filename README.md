@@ -37,7 +37,7 @@ Installs `podman-remote` and `podman-docker`, and mounts the host's Podman socke
 
 ```jsonc
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "ghcr.io/sebatec-eu/go-devcontainer:1",
   "features": {
     "ghcr.io/sebatec-eu/devcontainer-features/setup-podman:1": {},
   },
@@ -61,7 +61,7 @@ Installs Forgejo Runner, enabling CI/CD job execution within the dev container. 
 
 ```jsonc
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "ghcr.io/sebatec-eu/go-devcontainer:1",
   "features": {
     "ghcr.io/sebatec-eu/devcontainer-features/setup-forgejo-runner:2": {
       "version": "2.0.0",
@@ -88,7 +88,7 @@ Installs `mistral-vibe` and mounts the host's `.vibe` configuration directory in
 
 ```jsonc
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "ghcr.io/sebatec-eu/go-devcontainer:1",
   "features": {
     "ghcr.io/sebatec-eu/devcontainer-features/setup-mistral-vibe:1": {},
   },
@@ -111,7 +111,7 @@ Installs `beans` CLI tool ([GitHub](https://github.com/hmans/beans)) from GitHub
 
 ```jsonc
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "ghcr.io/sebatec-eu/go-devcontainer:1",
   "features": {
     "ghcr.io/sebatec-eu/devcontainer-features/setup-beans:1": {
       "version": "latest",
