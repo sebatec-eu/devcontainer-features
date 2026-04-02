@@ -1,8 +1,9 @@
 {
   "id": "setup-beans",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Setup Beans",
-  "description": "Installs beans CLI tool from GitHub releases.",
+  "description": "Installs the beans CLI — a flat-file issue tracker for humans and AI coding agents (github.com/hmans/beans)",
+  "keywords": ["beans", "issue-tracker", "task-tracker", "agentic-ai", "cli"],
   "options": {
     "version": {
       "type": "string",
