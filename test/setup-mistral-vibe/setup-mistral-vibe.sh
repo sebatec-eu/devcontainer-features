@@ -9,6 +9,6 @@ source dev-container-features-test-lib
 
 check "mistral-vibe is installed at /home/vscode/.local/bin/vibe" test -f "/home/vscode/.local/bin/vibe"
 check "mistral-vibe is executable" test -x "/home/vscode/.local/bin/vibe"
-check ".vibe mount point exists" test -d "/home/vscode/.vibe"
+check ".vibe mount point exists" test -d "/tmp/.vibe-mount"
 
 reportResults

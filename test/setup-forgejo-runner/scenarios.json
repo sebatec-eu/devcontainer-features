@@ -14,5 +14,43 @@
       }
     },
     "mounts": []
+  },
+  "setup-forgejo-runner-v2-with-podman": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-forgejo-runner": {},
+      "setup-podman": {}
+    },
+    "mounts": []
+  },
+  "setup-forgejo-runner-v2-with-podman-mistral": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-forgejo-runner": {},
+      "setup-podman": {},
+      "setup-mistral-vibe": {}
+    },
+    "mounts": []
+  },
+  "setup-forgejo-runner-v2-with-podman-mistral-beans": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-forgejo-runner": {},
+      "setup-podman": {},
+      "setup-mistral-vibe": {},
+      "setup-beans": {}
+    },
+    "mounts": []
+  },
+  "setup-forgejo-runner-v2-with-apt-packages": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-forgejo-runner": {},
+      "setup-podman": {},
+      "ghcr.io/devcontainers-extra/features/apt-get-packages:1": {
+        "packages": "bash-completion,pwgen"
+      }
+    },
+    "mounts": []
   }
 }

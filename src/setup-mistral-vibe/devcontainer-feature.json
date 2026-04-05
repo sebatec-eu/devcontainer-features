@@ -9,7 +9,10 @@
     {
       "type": "bind",
       "source": "${localEnv:HOME}/.vibe",
-      "target": "/home/vscode/.vibe"
+      "target": "/tmp/.vibe-mount"
     }
-  ]
+  ],
+  "containerEnv": {
+    "VIBE_HOME": "/tmp/.vibe-mount"
+  }
 }

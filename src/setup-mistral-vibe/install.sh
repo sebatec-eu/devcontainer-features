@@ -8,5 +8,4 @@ else
     sudo -u vscode bash -c 'curl -LsSf https://mistral.ai/vibe/install.sh | bash'
 fi
 
-# XXX: fix stupid access error
-echo "" > /tmp/.devcontainer-setup
+mkdir -p /tmp/.vibe-mount
