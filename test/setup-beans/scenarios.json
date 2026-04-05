@@ -4,5 +4,21 @@
     "features": {
       "setup-beans": {}
     }
+  },
+  "setup-beans-with-forgejo-runner": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-beans": {},
+      "setup-forgejo-runner": {}
+    }
+  },
+  "setup-beans-with-forgejo-runner-podman-mistral": {
+    "image": "ghcr.io/sebatec-eu/base-devcontainer:1",
+    "features": {
+      "setup-beans": {},
+      "setup-forgejo-runner": {},
+      "setup-podman": {},
+      "setup-mistral-vibe": {}
+    }
   }
 }
