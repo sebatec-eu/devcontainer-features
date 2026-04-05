@@ -1,12 +1,10 @@
 {
   "id": "setup-podman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Setup Podman",
   "description": "Installs podman-remote and podman-docker, and mounts the host's Podman socket into the container.",
   "options": {},
-  "installsAfter": [
-    "ghcr.io/devcontainers/features/common-utils"
-  ],
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"],
   "mounts": [
     {
       "type": "bind",
