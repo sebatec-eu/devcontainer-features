@@ -1,6 +1,6 @@
 {
   "id": "setup-mistral-vibe",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "Setup Mistral Vibe",
   "description": "Installs mistral-vibe and mounts the user's .vibe configuration directory.",
   "options": {},
