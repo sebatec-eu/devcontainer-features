@@ -17,6 +17,12 @@ Installs mistral-vibe and mounts the user's .vibe configuration directory.
 |-----|-----|-----|-----|
 
 
+## Customizations
+
+### VS Code Extensions
+
+- `mistralai.mistral-vibe-code`
+
 
 
 ---
