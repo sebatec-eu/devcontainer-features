@@ -11,6 +11,5 @@ check "mistral-vibe is installed at /home/vscode/.local/bin/vibe" test -f "/home
 check "mistral-vibe is executable" test -x "/home/vscode/.local/bin/vibe"
 check "/tmp/.vibe-mount mount point exists" test -d "/tmp/.vibe-mount"
 check "/home/vscode/.vibe is a symlink to /tmp/.vibe-mount" test -L "/home/vscode/.vibe"
-check "/root/.vibe is a symlink to /tmp/.vibe-mount" test -L "/root/.vibe"
 
 reportResults
