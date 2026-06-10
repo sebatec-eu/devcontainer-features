@@ -13,8 +13,7 @@ fi
 # reach the host-mounted config under the familiar `~/.vibe` location.
 mkdir -p /tmp/.vibe-mount
 for user_home in /home/vscode /root; do
-    user="${user_home#/}"
-    user="${user%%/*}"
+    user=$(basename "${user_home}")
     if ! id "${user}" &>/dev/null; then
         continue
     fi
