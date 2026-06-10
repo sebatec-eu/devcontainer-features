@@ -20,7 +20,9 @@ check "podman is installed" which podman
 check "podman is executable" podman --version
 check "mistral-vibe is installed at /home/vscode/.local/bin/vibe" test -f "/home/vscode/.local/bin/vibe"
 check "mistral-vibe is executable" test -x "/home/vscode/.local/bin/vibe"
-check ".vibe mount point exists" test -d "/tmp/.vibe-mount"
+check "/tmp/.vibe-mount mount point exists" test -d "/tmp/.vibe-mount"
+check "/home/vscode/.vibe is a symlink to /tmp/.vibe-mount" test -L "/home/vscode/.vibe"
+check "/root/.vibe is a symlink to /tmp/.vibe-mount" test -L "/root/.vibe"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.

@@ -1,6 +1,6 @@
 {
   "id": "setup-mistral-vibe",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "name": "Setup Mistral Vibe",
   "description": "Installs mistral-vibe and mounts the user's .vibe configuration directory.",
   "options": {},
@@ -12,9 +12,6 @@
       "target": "/tmp/.vibe-mount"
     }
   ],
-  "containerEnv": {
-    "VIBE_HOME": "/tmp/.vibe-mount"
-  },
   "customizations": {
     "vscode": {
       "extensions": ["mistralai.mistral-vibe-code"]
