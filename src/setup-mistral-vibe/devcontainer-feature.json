@@ -14,5 +14,10 @@
   ],
   "containerEnv": {
     "VIBE_HOME": "/tmp/.vibe-mount"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["mistralai.mistral-vibe-code"]
+    }
   }
 }
